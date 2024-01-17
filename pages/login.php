@@ -6,7 +6,7 @@ if (isset($_POST['usuario']) && isset($_POST['password'])) {
     if ($_POST['usuario'] == 'admin' && $_POST['password'] == 'admin') {
         $_SESSION['usuario'] = 'admin';
         $_SESSION['password'] = 'admin';
-        header("location:../index.php");
+        header("location:usuarios.php");
         exit();
     } else {
         echo "<script>alert('Usuario o contraseña incorrecta');</script>";
@@ -35,9 +35,6 @@ if (isset($_POST['usuario']) && isset($_POST['password'])) {
     <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
     <!-- CSS Files -->
     <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.7" rel="stylesheet" />
-    <!-- Nepcha Analytics (nepcha.com) -->
-    <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
-    <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
 
@@ -45,21 +42,20 @@ if (isset($_POST['usuario']) && isset($_POST['password'])) {
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3 navbar-transparent mt-4">
     <div class="container">
-      <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 text-white" href="../pages/login.html">
+      <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 text-white" href="../pages/login.php">
         Grupo 3
       </a>
     </div>
   </nav>
   <!-- End Navbar -->
   <main class="main-content  mt-0">
-    <section class="min-vh-100 mb-8">
+    <section class=" mb-8">
       <div class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg" style="background-image: url('../assets/img/curved-images/curved14.jpg');">
         <span class="mask bg-gradient-dark opacity-6"></span>
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-5 text-center mx-auto">
               <h1 class="text-white mb-2 mt-5">Bienvenido</h1>
-              <!-- <p class="text-lead text-white">Use these awesome forms to login or create new account in your project for free.</p> -->
             </div>
           </div>
         </div>
@@ -90,53 +86,14 @@ if (isset($_POST['usuario']) && isset($_POST['password'])) {
       </div>
     </section>
     <!-- -------- START FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
-    <footer class="footer py-5">
+    <footer class="footer">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mb-4 mx-auto text-center">
-            <a href="javascript:;" target="_blank" class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
-              Company
-            </a>
-            <a href="javascript:;" target="_blank" class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
-              About Us
-            </a>
-            <a href="javascript:;" target="_blank" class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
-              Team
-            </a>
-            <a href="javascript:;" target="_blank" class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
-              Products
-            </a>
-            <a href="javascript:;" target="_blank" class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
-              Blog
-            </a>
-            <a href="javascript:;" target="_blank" class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
-              Pricing
-            </a>
-          </div>
-          <div class="col-lg-8 mx-auto text-center mb-4 mt-2">
-            <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
-              <span class="text-lg fab fa-dribbble"></span>
-            </a>
-            <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
-              <span class="text-lg fab fa-twitter"></span>
-            </a>
-            <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
-              <span class="text-lg fab fa-instagram"></span>
-            </a>
-            <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
-              <span class="text-lg fab fa-pinterest"></span>
-            </a>
-            <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
-              <span class="text-lg fab fa-github"></span>
-            </a>
-          </div>
-        </div>
         <div class="row">
           <div class="col-8 mx-auto text-center mt-1">
             <p class="mb-0 text-secondary">
               Copyright © <script>
                 document.write(new Date().getFullYear())
-              </script> Soft by Creative Tim.
+              </script> Grupo 3 TAD
             </p>
           </div>
         </div>

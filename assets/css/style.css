@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'DIN Next Rounded LT W01 Regular';
+    src: url('https://db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot');
+    src: url('https://db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot?#iefix') format('embedded-opentype'),
+         url('https://db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff2') format('woff2'),
+         url('https://db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff') format('woff'),
+         url('https://db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.ttf') format('truetype');
+  }
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.containerAprender {
+    display: flex;
+    height: 100%;
+}
+
+.sidebar {
+    background-color: #333;
+    padding: 20px;
+    width: 200px;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-family: 'DIN Next Rounded LT W01 Regular', sans-serif; 
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 60px; /* Ajusta la altura según sea necesario */
+}
+
+#container-login {
+  margin-top: 50px;
+}
+
+.menu img {
+  height: 267px;
+  width: 267px;
+}
+
+.menu .col {
+  height: 310px;
+}
+
+.login .btn {
+  width: 102px;
+}
+
+#ingresar {
+  background-color: #065293;
+  border-color: #065293;
+}
+
+#ingresar:hover {
+  background-color: #2A6CA4;
+}
+
+img {
+    width: 50px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px; /* Espaciado dentro de cada enlace */
+}
+
+li.active {
+    background-color: #555; /* Color de fondo para la opción activa */
+    border-radius: 5px; /* Bordes redondeados para el efecto de selección */
+}
+
+.content {
+    padding: 20px;
+    height: 100%; /* Ajusta la altura según sea necesario */
+    box-sizing: border-box; /* Evita que el padding afecte la altura total */
+}
+
+.containerInicio {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+  }
+
+  .section-header {
+    background-color: #333;;
+    border-radius: 20px; /* Ajusta el radio para redondear más o menos */
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: left;
+    width: 500px; /* Ajusta el ancho según sea necesario */
+    font-family: 'DIN Next Rounded LT W01 Regular', sans-serif; /* Utilizando la nueva fuente */
+  }
+
+  .section-header h2 {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .section-text {
+    margin-top: 0;
+  }
+
+  .level-path {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .level-button {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    font-family: 'DIN Next Rounded LT W01 Regular', sans-serif;
+  }
+
+  .level-button:nth-child(odd) {
+    transform: translateX(20px);
+  }
+
+  .level-button:hover {
+    background-color: #2980b9;
+  }

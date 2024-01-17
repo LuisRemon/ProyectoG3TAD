@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Barra Lateral Ejemplo</title>
+</head>
+<body>
+
+    <div class="containerAprender">
+        <div class="sidebar">
+            <ul>
+                <li onclick="changeContent('inicio')" class="active">
+                    <img src="../assets/img/casa.png" alt="Inicio">
+                    <a href="#">Inicio</a>
+                </li>
+                <li onclick="changeContent('acerca')">
+                    <img src="../assets/img/cofre.png" alt="Acerca de">
+                    <a href="#">Acerca de</a>
+                </li>
+                <li onclick="changeContent('servicios')">
+                    <img src="../assets/img/perfil.png" alt="Servicios">
+                    <a href="#">Servicios</a>
+                </li>
+                <li onclick="changeContent('contacto')">
+                    <img src="../assets/img/pregunta.png" alt="Contacto">
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content" id="contentInicio">
+            <!-- Contenido de la página de inicio -->
+            <div class="containerInicio">   
+
+                <center>
+                <div class="section-header">
+                  <h2>Sección 1</h2>
+                  <p class="section-text">Aprende los conceptos básicos de la lengua de señas</p>
+                </div>
+                </center>
+            
+                <div class="level-path">
+                  <a href="#" class="level-button">1</a>
+                  <a href="#" class="level-button">2</a>
+                  <a href="#" class="level-button">3</a>
+                  <a href="#" class="level-button">4</a>
+                  <a href="#" class="level-button">5</a>
+                  <a href="#" class="level-button">6</a>
+                  <a href="#" class="level-button">7</a>
+                  <a href="#" class="level-button">8</a>
+                  <!-- Agrega más botones según sea necesario -->
+                </div>
+            
+              </div>
+        </div>
+        <div class="content" id="contentAcerca" style="display: none;">
+            <!-- Contenido de la página Acerca de -->
+            <h1>Acerca de nosotros</h1>
+            <p>Información sobre nuestra empresa o proyecto.</p>
+        </div>
+        <div class="content" id="contentServicios" style="display: none;">
+            <!-- Contenido de la página de Servicios -->
+            <h1>Nuestros Servicios</h1>
+            <p>Descripción de los servicios que ofrecemos.</p>
+        </div>
+        <div class="content" id="contentContacto" style="display: none;">
+            <!-- Contenido de la página de Contacto -->
+            <h1>Contacta con nosotros</h1>
+            <p>Información de contacto y formulario de contacto.</p>
+        </div>
+    </div>
+
+    <script src="../assets/js/script.js"></script>
+
+</body>
+</html>

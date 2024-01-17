@@ -8,7 +8,7 @@ $result = $conn->query($sql);
   <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 " id="sidenav-main">
     <div class="sidenav-header">
       <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
-      <a class="navbar-brand m-0" href="../index.php">
+      <a class="navbar-brand m-0" href="#">
         <img src="../assets/img/logo-reservatech-morado.png" class="navbar-brand-img h-100" alt="main_logo">
         <span class="ms-1 font-weight-bold">Grupo 3</span>
       </a>
@@ -66,7 +66,22 @@ $result = $conn->query($sql);
           </ol>
           <h6 class="font-weight-bolder mb-0">Usuarios</h6>
         </nav>
-        
+        <!-- Boton barra desplegable -->
+        <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+          <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+          </div>
+          <ul class="navbar-nav  justify-content-end">
+            <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+              <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
+                <div class="sidenav-toggler-inner">
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <!-- End Navbar -->
@@ -88,6 +103,7 @@ $result = $conn->query($sql);
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Contraseña</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Teléfono</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">País</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Acciones</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -113,6 +129,10 @@ $result = $conn->query($sql);
                         <td class="align-middle text-center">
                             <span class="text-secondary text-xs font-weight-bold"><?php echo $row['PAIS']?></span>
                         </td>
+                        <td class="align-middle text-center">
+                          <a href="update-cliente.php?id=<?php echo $row['ID']?>" class="btn btn-warning mb-0"><i class="bi bi-pencil-fill"></i> Editar</a>
+                          <a href="delete-cliente.php?id=<?php echo $row['ID']?>" class="btn btn-danger mb-0"><i class="bi bi-trash-fill"></i> Eliminar</a>
+                        </td>
                     </tr>
                     <?php
                         }
@@ -121,6 +141,9 @@ $result = $conn->query($sql);
                 </table>
               </div>
             </div>
+          </div>
+          <div class="col-12 text-end">
+            <a class="btn bg-gradient-dark mb-0" href="insert-cliente.php">Agregar</a>
           </div>
         </div>
       </div>
